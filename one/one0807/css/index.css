@@ -9,13 +9,13 @@ body,ul,p,h1,h2{
 	display: block;
 }
 
-.headerbgdcolor{
-  background-color: #EEEEEE;
-}
-
 .container {
   margin: 0 auto;
   width: 1330px;
+  background-color: #EEEEEE;
+}
+
+.headerbgdcolor{
   background-color: #EEEEEE;
 }
 

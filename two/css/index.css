@@ -1,0 +1,270 @@
+body,li,p,img,a{
+   margin: 0;
+   padding: 0;
+}
+
+.headcontainer,.girl_bcgcontainer,.goodscontainer,.footercontainer{
+    min-width: 1345px;
+}
+
+.mainbody_content{
+    margin: 0 auto;
+    max-width: 1345px;
+}
+
+/*header*/
+.headcontainer{
+    background-color: #535151;
+}
+
+header .shopname{
+    color: #D2D2D2;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 9px;
+    vertical-align: middle;
+    line-height: 118px;
+}
+
+nav{
+    display:inline-block;
+}
+
+header li{
+    list-style: none;
+    display:inline-block;
+    padding: 0 45px;
+    vertical-align: middle;
+}
+
+header li:last-child{
+    padding-right: 130px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #D3D3D3;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+nav a:hover{
+     color: white;
+}
+
+header img{
+    height: 45px;
+    vertical-align: middle;
+}
+
+
+/* main_section1_FALL&WINTER */
+
+.girl_bcg{
+    background-image: url("../img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 876px;
+}
+
+.covertext{
+    margin: 0 auto;
+    width: 798px;
+    background-color:rgba(255,255,255,0.4);
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    position: absolute;
+    /* left: calc(50% - 399px);
+    top: calc(50% - 125px); */
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.coverp {
+    color: #313233;
+    font-size: 74px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+.button_shopnow{
+    color: white;
+    display: inline-block;
+    font-size: 23px;
+    line-height: 58px;
+    font-family: sans-serif;
+    background-color: #303132;
+    display: inline-block;
+    margin-top: 24px;
+    padding: 0 90px;
+    text-decoration: none;
+}
+
+.free_text{
+    background-color: #E3E3E3;
+    font-size: 16px;
+    line-height: 67px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Raleway',sans-serif;
+    letter-spacing: 7px;
+    color: #515151;
+  }
+
+/* main_section2_YEAR ROUND */
+.goodscontainer{
+    margin:113px auto;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 105px;
+}
+
+.subtitle .subtitle_year{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 20px;
+}
+
+.subtitle .subtitle_line{
+    font-size: 50px;
+    line-height: 104px;
+    color: #7F7F80;
+}
+
+.subtitle .subtitle_must{
+    font-size: 25px;
+    color: #595A5A;
+    letter-spacing: 12px;
+    font-family: sans-serif;
+}
+
+.pic01,.pic02,.pic03{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+.pic01,.pic02{
+    margin-right: 17px;
+}
+
+.goods_pic{
+    width: 100%;
+    display: block;
+}
+
+.pic_a{
+    display: block;
+    width:100%;
+    text-decoration: none;
+    color:white;
+    background-color: #303132;
+    line-height: 72px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/*footer*/
+
+.footercontainer{
+    background-color: #535151;
+    padding-top: 110px;
+}
+
+.footer_upper .icon,.search,.contract{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon{
+    padding-left: 58px;
+    padding-right: 174px;
+}
+
+.footer_upper_p{
+    font-size: 18px;
+    color: #D2D2D2;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.icon a{
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.icon_sryle{
+    color: white;
+    font-size: 30px;
+}
+
+
+.inputbox{
+    background-color: #535151;
+    line-height: 45px;
+    width: 430px;
+    font-size:  17px;
+    border: 2px solid #F1F1F1;
+}
+
+.inputbutton{
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: #D3D3D3;
+    color: #3D3D3E;
+    padding: 0 17px;
+    margin-left: auto;
+    margin-top: 12px;
+    border: none;
+}
+
+.inputbox::placeholder{
+    color: white;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.contract{
+    padding-left: 180px;
+    text-align: center;
+}
+
+.phonenumber{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #D2D2D2;
+    font-weight: bold;
+}
+
+.emailconnect{
+    font-size: 20px;
+    line-height: 40px;
+    color: #D2D2D2;
+    font-weight: bold;
+}
+
+.copyright{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 197px;
+    text-align: center;
+    color: #D2D2D2;
+    font-family: 'Raleway',sans-serif;
+}
+
+.copyright a{
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: #D2D2D2;
+}
