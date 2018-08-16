@@ -47,7 +47,7 @@ header a:hover{
 /* zoominNews */
 .zoomin_imgText img{
       width: 100%;
-      min-height: 370px;
+      min-height: 400px;
 }
 
 .zoomin_imgText{
@@ -87,7 +87,6 @@ header a:hover{
 
 .zoomin_card_img{
       display: inline-block;
-      vertical-align: middle;
       margin-right: 5%;
       margin-left: 5%;
       width: 31%;
@@ -187,7 +186,6 @@ header a:hover{
      width: 100%;
      height: 100%;
      padding: 0;
-
 }
 
 .tip_text{
@@ -251,19 +249,38 @@ header a:hover{
       padding: 0;
 }
 
+/* RWD 設定調整 */
+
+@media (max-width: 767px) {
+  .header_logoContainer{
+        padding: 5px 0 15px 0;
+  }
+  .header_logoContainer img{
+        width: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .zoomin_card_text {
+      border-right: 0;
+  }
+  .zoomin_card{
+      border-top: 3px ridge;
+      border-color: rgba(255, 255, 255, 0.1);
+  }
+  .zoomin_card-first{
+      border-top: 0;
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1199px) {
+  .tip_img {
+      padding-right: 0;
+  }
+  .tip_text{
+       margin-top: 10px;
+  }
+}
 
 /*  end*/
