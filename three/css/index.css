@@ -24,12 +24,13 @@ body{
       padding: 0;
 }
 
-header a{
+.header_nav-a{
       line-height: 75px;
       text-align: center;
       background-color: #4B4B4B;
       color: #DEE0BB;
       font-size: 18px;
+      padding: 0;
 }
 
 .header_activeitem{
@@ -46,6 +47,7 @@ header a:hover{
 /* zoominNews */
 .zoomin_imgText img{
       width: 100%;
+      min-height: 370px;
 }
 
 .zoomin_imgText{
@@ -56,7 +58,7 @@ header a:hover{
       background: rgba(0, 0, 0, 0.6);
       position: absolute;
       bottom: 0;
-      padding: 29px 28px 29px 28px;
+      padding: 2%;
 }
 
 .zoomin_text h1{
@@ -68,15 +70,19 @@ header a:hover{
 .zoomin_text p{
       color: white;
       margin-bottom: 0;
-      font-size: 1.23rem;
-      line-height: 2.5rem;
+      font-size: 18px;
+      line-height: 38px;
       vertical-align: top;
       font-weight: bold;
 }
 
+.zoomin_text-iconstyle{
+      font-size: 25px;
+      color: #778D90;
+}
+
 .zoomin_card{
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding: 24px 0;
 }
 
 .zoomin_card_img{
@@ -96,8 +102,8 @@ header a:hover{
       width: 56%;
       vertical-align: middle;
       font-size: 1.25rem;
-      border-right: 0.5px ridge;
-      border-color: rgba(255, 255, 255, 0.3);
+      border-right: 3px ridge;
+      border-color: rgba(255, 255, 255, 0.1);
 }
 
 .zoomin_card_text-last{
@@ -119,18 +125,21 @@ header a:hover{
 
 .featuredGardens{
       padding: 30px 25px 0 25px;
-      border: 1px solid #EBEAE6;
 }
 
-.featuredGardens h1{
+.l-title{
       font-size: 20px;
       background-color: #DCE8D4;
       line-height: 58px;
       padding-left: 2.3%;
       color: #835034;
       margin-bottom: 30px;
+      border-bottom: 2px solid #B5CEA6;
 }
 
+.featuredGardens-border{
+      border-bottom: 2px solid #EBEAE6;
+}
 .featuredGardens .featuredGardens_card{
       border: 0;
 }
@@ -141,11 +150,11 @@ header a:hover{
 }
 
 .featuredGardens_cardText{
-      padding: 34px 0;
+      padding: 25px 0;
 }
 
 .featuredGardens_cardText-title{
-      font-size: 18px;
+      font-size: 20px;
       color: #866442;
       line-height: 47px;
       vertical-align: top;
@@ -154,14 +163,93 @@ header a:hover{
 }
 
 .featuredGardens_cardText-p{
-      font-size: 16px;
+      font-size: 18px;
       line-height: 36px;
       vertical-align: top;
+      margin-bottom: 0;
+}
+
+/* tips */
+
+.tips{
+      display: flex;
+      padding: 30px 25px 50px 25px;
+      background-color: white;
+      margin: 0;
+}
+
+.tip_img{
+      padding: 0;
+      padding-right: 25px;
+}
+
+.tip_img img{
+     width: 100%;
+     height: 100%;
+     padding: 0;
+
+}
+
+.tip_text{
+     padding: 0;
+}
+
+.tip_text ol{
+     margin-bottom: 0;
 }
 
 
+.tip_text-li{
+     font-size: 18px;
+     line-height: 35px;
+     vertical-align: top;
+}
+
+/* footer */
+
+.footer{
+     margin: 0;
+}
+.footer_fourPart{
+      background-color: #DDE9D5;
+      padding: 25px 25px 10px;
+      border: 1px solid #C9DBBE;
+
+}
+
+.footer_fourPart h2{
+      font-size: 21px;
+      color: #848284;
+      margin-bottom: 20px;
+}
+
+.footer_fourPart p{
+      color: #A0A39E;
+      margin-bottom: 0;
+}
+
+.footer_connect_icon a{
+      display: block;
+      color: #A0A39E;
+      line-height: 35px;
+}
+.footer_connect_icon i{
+      margin-right: 15px;
+}
 
 
+.footer_connect_icon-iconstyle{
+      color: #30681B;
+      font-size: 18px;
+}
+
+.footer_copyright{
+      text-align: center;
+      line-height: 47px;
+      color: white;
+      font-weight: bold;
+      padding: 0;
+}
 
 
 
