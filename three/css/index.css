@@ -2,9 +2,9 @@ body{
       background-image: url("../img/bg-body.jpg");
   }
 
-.container{
+.container-bg{
       background-color: #356618;
-      padding: 0 30px 0 30px;
+      padding: 0 30px;
       box-sizing: border-box;
 }
 
@@ -45,34 +45,32 @@ header a:hover{
 }
 
 /* zoominNews */
-.zoomin_imgText img{
-      width: 100%;
-      min-height: 400px;
-}
-
 .zoomin_imgText{
-      position: relative;
+      background-image: url("../img/gardening1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
 }
 
-.zoomin_text{
+
+.zoomin_imgText_text{
       background: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      bottom: 0;
-      padding: 2%;
+      padding: 20px;
+      margin-top: 468px;
 }
 
-.zoomin_text h1{
+.zoomin_imgText_text h2{
       color: #E5E89B;
       margin-bottom: 0;
       font-size: 28px;
 }
 
-.zoomin_text p{
+.zoomin_imgText_text p{
       color: white;
       margin-bottom: 0;
       font-size: 18px;
       line-height: 38px;
-      vertical-align: top;
       font-weight: bold;
 }
 
@@ -82,7 +80,9 @@ header a:hover{
 }
 
 .zoomin_card{
-      padding: 24px 0;
+      margin: 24px 0;
+      border-right: 3px ridge;
+      border-color: rgba(255, 255, 255, 0.1);
 }
 
 .zoomin_card_img{
@@ -90,6 +90,7 @@ header a:hover{
       margin-right: 5%;
       margin-left: 5%;
       width: 31%;
+      border: 1px white solid;
 }
 
 .zoomin_card_img img{
@@ -101,11 +102,9 @@ header a:hover{
       width: 56%;
       vertical-align: middle;
       font-size: 1.25rem;
-      border-right: 3px ridge;
-      border-color: rgba(255, 255, 255, 0.1);
 }
 
-.zoomin_card_text-last{
+.zoomin_card-last{
       border-right: 0;
 }
 
@@ -136,16 +135,15 @@ header a:hover{
       border-bottom: 2px solid #B5CEA6;
 }
 
-.featuredGardens-border{
+/* .featuredGardens-border{
       border-bottom: 2px solid #EBEAE6;
-}
+} */
 .featuredGardens .featuredGardens_card{
       border: 0;
 }
 
 .featuredGardens_cardImg{
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-radius: 0;
 }
 
 .featuredGardens_cardText{
@@ -155,17 +153,21 @@ header a:hover{
 .featuredGardens_cardText-title{
       font-size: 20px;
       color: #866442;
-      line-height: 47px;
-      vertical-align: top;
       margin-bottom: 0;
       font-weight: bold;
+      margin-bottom: 20px;
 }
 
 .featuredGardens_cardText-p{
       font-size: 18px;
-      line-height: 36px;
+      line-height: 34px;
       vertical-align: top;
       margin-bottom: 0;
+}
+
+.eaturedGardens-bottomBorder{
+      border-bottom: 2px solid #EBEAE6;
+      width: 100%;
 }
 
 /* tips */
@@ -175,21 +177,23 @@ header a:hover{
       padding: 30px 25px 50px 25px;
       background-color: white;
       margin: 0;
+      align-items: center;
 }
 
 .tip_img{
-      padding: 0;
-      padding-right: 25px;
+      padding: 0 30px 0 0;
 }
 
 .tip_img img{
      width: 100%;
-     height: 100%;
-     padding: 0;
 }
 
 .tip_text{
      padding: 0;
+}
+
+.tip_text ol{
+     padding-left: 20px;
 }
 
 .tip_text ol{
@@ -229,7 +233,7 @@ header a:hover{
 .footer_connect_icon a{
       display: block;
       color: #A0A39E;
-      line-height: 35px;
+      margin-bottom: 10px;
 }
 .footer_connect_icon i{
       margin-right: 15px;
@@ -243,36 +247,17 @@ header a:hover{
 
 .footer_copyright{
       text-align: center;
-      line-height: 47px;
+      margin: 16px 0;
       color: white;
       font-weight: bold;
-      padding: 0;
+      padding: 0 2px;
+}
+
+.footer_copyright-br{
+      display: none;
 }
 
 /* RWD 設定調整 */
-
-@media (max-width: 767px) {
-  .header_logoContainer{
-        padding: 5px 0 15px 0;
-  }
-  .header_logoContainer img{
-        width: 55%;
-  }
-}
-
-@media (max-width: 991px) {
-  .zoomin_card_text {
-      border-right: 0;
-  }
-  .zoomin_card{
-      border-top: 3px ridge;
-      border-color: rgba(255, 255, 255, 0.1);
-  }
-  .zoomin_card-first{
-      border-top: 0;
-  }
-}
-
 
 @media (max-width: 1199px) {
   .tip_img {
@@ -281,6 +266,70 @@ header a:hover{
   .tip_text{
        margin-top: 10px;
   }
+  .tip_img-position{
+       order: 2;
+  }
+  .tip_text-position{
+       order: 1;
+       margin-bottom: 10px;
+  }
 }
+
+@media (max-width: 991px) {
+  .zoomin_card{
+      border-right: 0;
+      margin: 0;
+      padding: 24px 0;
+      border-bottom: 3px ridge;
+      border-color: rgba(255, 255, 255, 0.1);
+  }
+  .zoomin_card-last{
+      border-bottom: 0;
+  }
+  .zoomin_imgText_text{
+        margin-top: 300px;
+  }
+  .footer_fourPart h2{
+        font-size: 14px;
+  }
+  .footer_fourPart p{
+        font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_logoContainer{
+        padding: 5px 0 15px 0;
+  }
+  .header_logoContainer img{
+        width: 80%;
+  }
+
+  .zoomin_imgText_text{
+        margin-top: 220px;
+  }
+  .zoomin_imgText_text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+  }
+}
+
+@media (max-width: 575px) {
+  .header_nav-a{
+        line-height: 45px;
+  }
+  .zoomin_imgText_text{
+        margin-top: 150px;
+  }
+  .footer_copyright{
+        font-size: 14px;
+  }
+  .footer_copyright-br{
+        display: inline;
+  }
+}
+
 
 /*  end*/
