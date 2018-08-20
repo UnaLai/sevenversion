@@ -26,9 +26,10 @@ header .nav a{
       background-color: #4B4B4B;
       color: #DEE0BB;
       font-size: 18px;
+      padding: 0;
 }
 
-.header_activeitem{
+header .nav .header_activeitem{
       background-color: #96B285;
       color: #406D26;
 }
@@ -38,6 +39,16 @@ header a:hover{
       background-color: #D9EACF;
       color: #486042;
       font-weight: bolder;
+}
+
+/* 做漢堡 */
+
+header label{
+      display: none;
+}
+
+#toggle{
+      display: none;
 }
 
 /* zoominNews */
@@ -52,9 +63,14 @@ header a:hover{
 
 .zoomin_imgText_text{
       background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
+      padding: 20px 24px;
       margin-top: 468px;
 }
+
+.zoominNews a{
+     text-decoration: none;
+}
+
 
 .zoomin_imgText_text h2{
       color: #E5E89B;
@@ -77,43 +93,52 @@ header a:hover{
       border-radius: 50%
 }
 
-.zoomin_card{
-      margin: 24px 0;
+.zoomin_media_container{
+      padding: 0 15px;
+}
+
+.zoomin_media{
+      margin: 13px 0;
+      padding: 13px 0;
       border-right: 3px ridge;
       border-color: rgba(255, 255, 255, 0.1);
 }
 
-.zoomin_card_img{
+.zoomin_media_img{
       display: inline-block;
-      margin-right: 5%;
-      margin-left: 5%;
+      margin-right: 4%;
+      margin-left: 4%;
       width: 31%;
       border: 1px white solid;
 }
 
-.zoomin_card_img img{
+.zoomin_media_img img{
       width: 100%;
       padding-right: 0;
 }
 
-.zoomin_card_text{
+.zoomin_media_text{
       display: inline-block;
       width: 56%;
       vertical-align: middle;
-      font-size: 1.25rem;
+      font-size: 16px;
 }
 
-.zoomin_card-last{
+.zoomin_media_text a{
+      display: block;
+}
+
+.zoomin_media-last{
       border-right: 0;
 }
 
 
-.zoomin_card_text h4{
+.zoomin_media_text h4{
       color: #E5E89B;
       margin-bottom: 0;
 }
 
-.zoomin_card_text p{
+.zoomin_media_text p{
        color: white;
        margin-bottom: 0;
 }
@@ -130,7 +155,7 @@ header a:hover{
       line-height: 58px;
       padding-left: 2.3%;
       color: #835034;
-      margin-bottom: 30px;
+      margin-bottom: 18px;
       border-bottom: 2px solid #B5CEA6;
 }
 
@@ -176,11 +201,10 @@ header a:hover{
 
 .tips img{
      width: 100%;
-     padding-right: 30px;
 }
 
 .tip_text{
-     padding: 0;
+     padding: 0 0 0 37px;
 }
 
 .tip_text ol{
@@ -193,7 +217,7 @@ header a:hover{
 
 .tip_text li{
     font-size: 18px;
-    line-height: 35px;
+    line-height: 31px;
 }
 
 /* footer */
@@ -242,8 +266,8 @@ header a:hover{
 /* RWD 設定調整 */
 
 @media (max-width: 1199px) {
-  .tip_img {
-      padding-right: 0;
+  .tip_text {
+      padding-left: 0;
   }
   .tip_img-position{
        order: 1;
@@ -257,14 +281,14 @@ header a:hover{
 }
 
 @media (max-width: 991px) {
-  .zoomin_card{
+  .zoomin_media{
       border-right: 0;
       margin: 0;
       padding: 24px 0;
       border-bottom: 3px ridge;
       border-color: rgba(255, 255, 255, 0.1);
   }
-  .zoomin_card-last{
+  .zoomin_media-last{
       border-bottom: 0;
   }
   .zoomin_imgText_text{
@@ -295,6 +319,13 @@ header a:hover{
         -webkit-line-clamp: 3;
         overflow: hidden;
   }
+  .footer_connect_icon a{
+        margin-bottom: 0;
+        font-size: 14px;
+  }
+  .footer_connect_icon i{
+        font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -315,15 +346,28 @@ header a:hover{
         line-height: 45px;
         text-align: center;
   }
-  .zoomin_card_text a{
-        display: block;
-  }
-  .zoomin_card_text h4{
+  .zoomin_media_text h4{
         font-size: 18px;
   }
 
-  .zoomin_card_text p{
+  .zoomin_media_text p{
          font-size: 16px;
+  }
+  /* 做漢堡 */
+  .header_nav label{
+          display:block;
+          cursor: pointer;
+          background-color: #4B4B4B;
+          font-size: 30px;
+          margin-bottom: 0;
+          text-align: center;
+          color: #DEE0BB;
+  }
+  .header_nav ul{
+          display:none;
+  }
+  #toggle:checked + ul{
+          display:flex;
   }
 
 }
