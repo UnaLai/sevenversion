@@ -187,8 +187,10 @@ header label{
 
 
 .eaturedGardens-bottomBorder{
-      border-bottom: 2px solid #EBEAE6;
       width: 100%;
+      content: "";
+      height: 2px;
+      background-color: #EBEAE6;
 }
 
 /* tips */
@@ -265,7 +267,7 @@ header label{
 
 /* RWD 設定調整 */
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .tip_text {
       padding-left: 0;
   }
@@ -280,7 +282,7 @@ header label{
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .zoomin_media{
       border-right: 0;
       margin: 0;
@@ -302,7 +304,7 @@ header label{
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header_logoContainer{
         padding: 5px 0 15px 0;
   }
@@ -328,7 +330,7 @@ header label{
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   header a{
         line-height: 45px;
   }
@@ -369,8 +371,4 @@ header label{
   #toggle:checked + ul{
           display:flex;
   }
-
 }
-
-
-/*  end*/
