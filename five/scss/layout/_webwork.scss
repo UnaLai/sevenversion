@@ -1,0 +1,43 @@
+.webwork{
+  background-color: white;
+  padding-bottom: 50px;
+  position: relative;
+  @include minipad{
+    padding-bottom: 150px;
+  }
+  @extend %container--fluid;
+  .webwork__title{
+    position: absolute;
+    top: -56px;
+    left:50%;
+    transform:translateX(-50%);
+    @include minipad{
+      top: -100px;
+    }
+  }
+  .headline{
+    padding: 20px 5px;
+    @extend %dialogstyle;
+    @include minipad{
+      padding: 36px 130px;
+    }
+  }
+  .webwork__sample{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .webwork__sample__img{
+    width: 50%;
+    @include minipad{
+      width: 25%;
+    }
+    img{
+      width:100%;
+      height: 100%;
+      transform: transform 4s;
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.folks{
+  margin-bottom: 70px;
+  @extend %container--fluid;
+  .folks__slogan__text{
+    @extend %dialogstyle;
+    padding: 28px 0;
+    width: 100%;
+  }
+  .folks--container{
+    @extend %container--fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .folks__title{
+    font-size: 35px;
+    text-align: center;
+    color: $maincolor;
+    margin-bottom: 60px;
+  }
+  .folks__characters{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .character{
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    @include minipad{
+      width: 47%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .character__intro{
+    padding: 25px 0 55px;
+    text-align: center;
+    .character__intro__name{
+      font-size: 45px;
+      color: $maincolor;
+      letter-spacing: 8px;
+      @include minipad{
+        font-size: 53px;
+      }
+      &:hover{
+        color:lighten($maincolor,20%);
+      }
+    }
+    .character__intro__career{
+      font-size: 21px;
+    }
+  }
+  button{
+    color:white;
+    background-color: black;
+    width: 30%;
+    padding: 20px 0;
+    font-size: 14px;
+    border: none;
+    @include minipad{
+      width: 23%;
+      font-size: 20px;
+    }
+    &:hover{
+    background-color: $maincolor;
+    }
+  }
+}

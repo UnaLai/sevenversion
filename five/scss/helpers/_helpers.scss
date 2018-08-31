@@ -1,0 +1,65 @@
+@mixin phone {
+    @media screen and (min-width: $width--phone) {
+        @content;
+    }
+}
+@mixin minipad {
+    @media screen and (min-width: $width--minipad) {
+        @content;
+    }
+}
+@mixin pad {
+    @media screen and (min-width: $width--pad) {
+        @content;
+    }
+}
+@mixin pc{
+    @media screen and (min-width: $width--pc){
+        @content;
+    }
+}
+%container--fluid{
+  width: 100%;
+}
+%container--fixed{
+  width: 100%;
+  margin: 0 auto;
+  @include phone{
+    max-width: $width--phone;
+  }
+  @include minipad{
+    max-width: $width--minipad;
+  }
+  @include pad{
+    max-width: $width--pad;
+  }
+  @include pc{
+    max-width: $width--pc*0.95;
+  }
+}
+%circle{
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+%dialogstyle{
+  background-color: $maincolor;
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 4px;
+  @include minipad{
+    font-size: 26px;
+  }
+}
+.triangle{
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-color: $maincolor transparent transparent transparent;
+  border-width: 30px;
+  border-style: solid;
+  margin: 0 auto;
+}

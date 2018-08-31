@@ -1,0 +1,70 @@
+.webfolk {
+   @extend %container--fluid;
+   background: url("../img/banner.png") no-repeat;
+   background-size: cover;
+   background-position: center;
+   .webfolk--container {
+      @extend %container--fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      color: white;
+      text-align: center;
+      font-family: $font-family--serif;
+      @include minipad{
+        padding-top: 215px;
+      }
+   }
+   .webfolk__title {
+      margin-bottom: 60px;
+      @include minipad{
+        margin-bottom: 130px;
+      }
+      h1 {
+         font-size: 50px;
+         font-style: italic;
+         @include minipad{
+           font-size: 100px;
+         }
+      }
+      span {
+         font-family: 'Kaushan Script', cursive;
+         font-size: 50px;
+         font-weight: 600;
+         @include minipad{
+           font-size: 95px;
+         }
+      }
+      .webfolk__title__subtitle {
+         font-size: 20px;
+         letter-spacing: 5px;
+         @include minipad{
+           font-size: 35px;
+           letter-spacing: 16px;
+         }
+      }
+   }
+   p {
+      width: 90%;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 5px;
+      margin-bottom: 50px;
+      @include minipad{
+        font-size: 28px;
+        line-height: 45px;
+        width: 60%;
+      }
+   }
+   .circlegroup_vertical {
+      margin-bottom: 100px;
+      @include minipad{
+        margin-bottom: 150px;
+      }
+   }
+   .circle_vertical {
+      @extend%circle;
+      margin-bottom: 30px;
+   }
+}
