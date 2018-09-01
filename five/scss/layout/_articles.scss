@@ -6,7 +6,7 @@
    @extend %container--fluid;
    padding: 50px 0 35px;
    color: white;
-   @include minipad {
+   @include mediaquery_minipad {
       padding-top: 105px;
    }
    .articles__container {
@@ -14,18 +14,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      @include minipad {
+      @include mediaquery_minipad {
          justify-content: space-between;
       }
    }
-   .articles__left {
+   .articles__first {
       width: 95%;
-      @include minipad {
+      @include mediaquery_minipad {
          width: 42%;
       }
       article:nth-child(1) {
          margin-bottom: 70px;
-         @include minipad {
+         @include mediaquery_minipad {
             margin-bottom: 160px;
          }
       }
@@ -33,24 +33,31 @@
          margin-top: 70px;
       }
    }
-   .articles__right {
+   .articles__second {
       padding-top: 70px;
       width: 95%;
-      @include minipad {
+      @include mediaquery_minipad {
          width: 42%;
          padding-top: 375px;
       }
-      article:nth-child(1) {
+      article:nth-child(2) {
          margin-bottom: 70px;
-         @include minipad {
+         @include mediaquery_minipad {
             margin-bottom: 120px;
          }
       }
-      article:nth-child(3) {
+      article:nth-child(4) {
          margin: 80px 0 70px;
-         @include minipad {
+         @include mediaquery_minipad {
             margin-bottom: 170px;
          }
+      }
+      .circlegroup_level:nth-child(1){
+        margin-bottom: 70px;
+        @include mediaquery_minipad {
+           display: none;
+             margin-bottom: 0;
+        }
       }
    }
    h2 {
@@ -58,15 +65,15 @@
       margin-bottom: 20px;
       letter-spacing: 2px;
       text-align: center;
-      @include minipad {
+      @include mediaquery_minipad {
          font-size: 35px;
          letter-spacing: 4px;
          text-align: left;
       }
-      @include pad {
+      @include mediaquery_pad {
          font-size: 40px;
       }
-      @include pc {
+      @include mediaquery_pc {
          font-size: 55px;
       }
    }
@@ -75,7 +82,7 @@
       line-height: 29px;
       font-family: $font-family--sans-serif;
       margin-bottom: 35px;
-      @include minipad {
+      @include mediaquery_minipad {
          font-size: 22px;
       }
    }
@@ -105,7 +112,7 @@
         color: black;
         font-size: 10px;
         padding: 20px 10px;
-        @include minipad {
+        @include mediaquery_minipad {
            font-size: 20px;
            padding: 20px 90px;
         }

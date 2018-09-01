@@ -1,16 +1,16 @@
 footer{
-  background-color: #E4E3E3;
+  background-color: $footercolor;
   padding: 20px 0;
   text-align: center;
   @extend %container--fluid;
-  @include minipad{
+  @include mediaquery_minipad{
     padding: 65px 0;
   }
   div{
     font-size: 12px;
     letter-spacing: 0px;
     font-family: $font-family--sans-serif;
-    @include minipad{
+    @include mediaquery_minipad{
       font-size: 22px;
       letter-spacing: 4px;
     }
