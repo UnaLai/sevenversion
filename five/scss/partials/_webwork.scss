@@ -1,3 +1,9 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
 .webwork {
    background-color: white;
    padding-bottom: 50px;
@@ -6,7 +12,7 @@
       padding-bottom: 150px;
    }
    @extend %container--fluid;
-   .webwork__title {
+   &__title {
       position: absolute;
       top: -56px;
       left: 50%;
@@ -29,11 +35,11 @@
          padding: 36px 130px;
       }
    }
-   .webwork__sample {
+   &__sample {
       display: flex;
       flex-wrap: wrap;
    }
-   .webwork__sample__img {
+   &__sample__img {
       width: 50%;
       position: relative;
       @include mediaquery_minipad {

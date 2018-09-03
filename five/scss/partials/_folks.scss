@@ -1,7 +1,13 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
 .folks{
   margin-bottom: 70px;
   @extend %container--fluid;
-  .folks__slogan__text{
+  &__slogan__text{
     @extend %dialogstyle;
     padding: 28px 0;
     width: 100%;
@@ -12,13 +18,13 @@
     flex-direction: column;
     align-items: center;
   }
-  .folks__title{
+  &__title{
     font-size: 35px;
     text-align: center;
     color: $maincolor;
     margin-bottom: 60px;
   }
-  .folks__characters{
+  &__characters{
     display:flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -38,7 +44,7 @@
   .character__intro{
     padding: 25px 0 55px;
     text-align: center;
-    .character__intro__name{
+    &__name{
       font-size: 45px;
       color: $maincolor;
       letter-spacing: 8px;
@@ -49,7 +55,7 @@
         color:lighten($maincolor,20%);
       }
     }
-    .character__intro__career{
+    &__career{
       font-size: 21px;
       font-family: $font-family--sans-serif;
     }

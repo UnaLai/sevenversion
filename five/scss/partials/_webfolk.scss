@@ -1,3 +1,9 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
 .webfolk {
    @extend %container--fluid;
    background: url("../img/banner.png") no-repeat;
@@ -17,7 +23,7 @@
         padding-bottom: 150px;
       }
    }
-   .webfolk__title {
+   &__title {
       margin-bottom: 60px;
       @include mediaquery_minipad{
         margin-bottom: 130px;
@@ -37,7 +43,7 @@
            font-size: 95px;
          }
       }
-      .webfolk__title__subtitle {
+      &__subtitle {
          font-size: 20px;
          letter-spacing: 5px;
          @include mediaquery_minipad{

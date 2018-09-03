@@ -1,3 +1,9 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
 .articles {
    background: url("../img/sea-horse-bg.jpg");
    background-repeat: no-repeat;
@@ -9,7 +15,7 @@
    @include mediaquery_minipad {
       padding-top: 105px;
    }
-   .articles__container {
+   &__container {
       @extend %container--fixed;
       display: flex;
       flex-wrap: wrap;
@@ -18,7 +24,7 @@
          justify-content: space-between;
       }
    }
-   .articles__first {
+   &__first {
       width: 95%;
       @include mediaquery_minipad {
          width: 42%;
@@ -33,7 +39,7 @@
          margin-top: 70px;
       }
    }
-   .articles__second {
+   &__second {
       padding-top: 70px;
       width: 95%;
       @include mediaquery_minipad {
