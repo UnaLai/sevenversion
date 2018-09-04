@@ -1,0 +1,46 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+nav{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  position: relative;
+  top:-30px;
+  .nav__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 73.2%;
+    background: white;
+    a{
+      display: inline-block;
+      padding: 26px 30px;
+      box-sizing: border-box;
+      border-right: 1px solid  #EDEDED;
+      color: black;
+      &:hover{
+        background-color: $maincolor;
+      }
+    }
+  }
+  .nav__input{
+    width: 26.3%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+      width: 95%;
+      line-height: 45px;
+      font-size: 18px;
+      color: #9F9F9F;
+      background: #F3F3F3 url('../img/search.png') no-repeat 3px 3px;
+      background-position-x:95%;
+      background-position-y:50%;
+      border: solid 1px #EDEDED;
+    }
+  }
+}

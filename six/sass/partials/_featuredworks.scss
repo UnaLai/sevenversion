@@ -1,0 +1,23 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/extendclass.scss";
+.featuredworks{
+  padding: 60px 45px 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  h3 {
+     font-size: 31px;
+     font-weight: 500;
+     margin-top: 0;
+     width: 100%;
+  }
+  &__img{
+    width: 23%;
+    img{
+      width: 100%;
+    }
+  }
+}

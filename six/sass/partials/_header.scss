@@ -1,0 +1,59 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+header {
+   background-color: black;
+   padding-top: 110px;
+   position: relative;
+}
+.header__container {
+   @extend%container--fixed;
+   padding: 47px 50px 40px;
+   background-image: url("../img/subbg.gif");
+   position: absolute;
+   top: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   justify-content: space-between;
+}
+.header__logo {
+   width: 28%;
+   img {
+      height: 100%;
+      width: 100%;
+   }
+}
+.header__contact {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   &__icons {
+      text-align: right;
+      margin-bottom: 10px;
+      a {
+         display: inline-block;
+         width: 28px;
+         height: 27px;
+         background-image: url("../img/social.png");
+         margin-left: 10px;
+         &:nth-child(2) {
+            background-position-x: -37px;
+         }
+         &:nth-child(3) {
+            background-position-x: -74px;
+         }
+         &:nth-child(4) {
+            background-position-x: -110px;
+         }
+         &:nth-child(5) {
+            background-position-x: -149px;
+         }
+         &:hover {
+            background-position-y: -27px;
+         }
+      }
+   }
+}

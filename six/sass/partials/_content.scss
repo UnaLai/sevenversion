@@ -1,0 +1,15 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+.content{
+  background-image: url("../img/bg.jpg");
+  padding-top:130px;
+  padding: 130px 0 300px;
+  &__container{
+    @extend%container--fixed;
+    background-image: url("../img/subbg.gif");
+    height: 2000px;
+  }
+}

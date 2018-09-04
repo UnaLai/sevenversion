@@ -1,0 +1,36 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/extendclass.scss";
+.carousel{
+  position: relative;
+  top:-30px;
+  .carousel--height{
+    width: 100%;
+  }
+  input{
+    display: none;
+  }
+  &__img{
+    position: absolute;
+    top:0;
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .pre{
+      @extend%carousel--label;
+      left:0;
+    }
+    .next{
+      @extend%carousel--label;
+      right:0;
+    }
+  }
+}
+
+#i1:checked ~ #img1,#i2:checked ~ #img2,#i3:checked ~ #img3{
+  z-index:3;
+}
