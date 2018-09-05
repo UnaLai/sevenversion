@@ -23,13 +23,15 @@
                     <a href="##"></a>
                     <a href="##"></a>
                 </div>
-                <div>Call Us Now: +1 (777) 784-25-43 </div>
+                <div class="header__contact__phone">Call Us Now: +1 (777) 784-25-43 </div>
             </div>
         </div>
     </header>
     <div class="content">
         <div class="content__container">
             <nav>
+                <label class="nav__hamburger__label" for="header__nav__toggle">&#9776;</label>
+                <input class="nav__hamburger__checkbox" type="checkbox" id="header__nav__toggle">
                 <div class="nav__items">
                     <a href="##">HOME</a>
                     <a href="##">ABOUT</a>
@@ -50,18 +52,18 @@
                 <input type="radio" id="i3" name="images" checked/>
                 <div class="carousel__img" id="img1">
                     <img src="img/banner1.jpg" />
-                    <label class="pre" for="i3"><</label>
-                    <label class="next" for="i2">></label>
+                    <label class="pre" for="i3"></label>
+                    <label class="next" for="i2"></label>
                 </div>
                 <div class="carousel__img" id="img2">
                     <img src="img/banner2.jpg" />
-                    <label class="pre" for="i1"><</label>
-                    <label class="next" for="i3">></label>
+                    <label class="pre" for="i1"></label>
+                    <label class="next" for="i3"></label>
                 </div>
                 <div class="carousel__img" id="img3">
                     <img src="img/banner3.jpg" />
-                    <label class="pre" for="i2"><</label>
-                    <label class="next" for="i1">></label>
+                    <label class="pre" for="i2"></label>
+                    <label class="next" for="i1"></label>
                 </div>
             </div>
 
@@ -154,34 +156,111 @@
             </section>
 
             <div class="featuredworks">
-              <h3>FEATURED WORKS</h3>
-              <div class="featuredworks__img">
-                <img src="img/g1.jpg">
-              </div>
-              <div class="featuredworks__img">
-                <img src="img/g2.jpg">
-              </div>
-              <div class="featuredworks__img">
-                <img src="img/g3.jpg">
-              </div>
-              <div class="featuredworks__img">
-                <img src="img/g4.jpg">
-              </div>
+                <h3>FEATURED WORKS</h3>
+                <div class="featuredworks__img">
+                    <a href="##"><img src="img/g1.jpg"></a>
+                </div>
+                <div class="featuredworks__img">
+                    <a href="##"><img src="img/g2.jpg"></a>
+                </div>
+                <div class="featuredworks__img">
+                    <a href="##"><img src="img/g3.jpg"></a>
+                </div>
+                <div class="featuredworks__img">
+                    <a href="##"><img src="img/g4.jpg"></a>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div class="tweets"></div>
-        <div class="testimonials"></div>
-        <div class="touch"></div>
-        <div class="flickr"></div>
-        <div class="footer__bottom">
-            <div class="footer__bottom__copyright"></div>
-            <div class="footer__bottom__nav"></div>
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__content__tweets">
+                    <h5>LATEST TWEETS</h5>
+                    <span>loading tweets...</span>
+                </div>
+                <div class="footer__content__testimonials">
+                    <h5>TESTIMONIALS</h5>
+                    <div class="footer__content__testimonials__dialog">
+                        <div class="footer__content__testimonials__dialog__square">" Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat</div>
+                        <div class="footer__content__testimonials__dialog__triangle"></div>
+                    </div>
+                    <div class="footer__content__testimonials__media">
+                        <div class="footer__content__testimonials__media__img">
+                            <img src="img/men.jpg" />
+                        </div>
+                        <div class="footer__content__testimonials__media__intro">
+                            <div class="footer__content__testimonials__media__intro__name">Stephan Bingham</div>
+                            <a class="footer__content__testimonials__media__intro__url">demolink.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__content__touch">
+                    <h5>GET IN TOUCH</h5>
+                    <form action="##">
+                        <input type="text" placeholder=" Name">
+                        <input type="text" placeholder=" Email">
+                        <input type="text" placeholder=" Message">
+                        <button type="reset">CLEAR FORM</button>
+                        <button type="submit">SEND!</button>
+                    </form>
+                </div>
+                <div class="footer__content__flickr">
+                    <h5>FLICKR</h5>
+                    <div class="footer__content__flickr__imgcontainer">
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f1.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f2.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f3.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f4.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f5.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f6.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f7.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f8.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f9.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f10.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f11.jpg"/></a>
+                        </div>
+                        <div class="footer__content__flickr__imgcontainer__img">
+                            <a href="##"><img src="img/f12.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__copyright">BUSINESS PLANET &copy;2020 | <span>Privacy Policy</span></div>
+                <div class="footer__bottom__nav">
+                    <a href="##">HOME</a>
+                    <a href="##">ABOUT</a>
+                    <a href="##">FEATURES</a>
+                    <a href="##">PORTFOLIO</a>
+                    <a href="##">BLOG</a>
+                    <a href="##">CONTACTS</a>
+                </div>
+            </div>
         </div>
     </footer>
-
 </body>
 
 </html>

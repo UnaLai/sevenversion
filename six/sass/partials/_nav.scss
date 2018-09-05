@@ -9,38 +9,69 @@ nav{
   flex-wrap: wrap;
   position: relative;
   top:-30px;
+  .nav__hamburger__checkbox{
+    display: none;
+  }
+  .nav__hamburger__label{
+    display: block;
+    font-size: 48px;
+    width: 55%;
+    background-color: white;
+    @include mediaquery_pad{
+      display: none;
+      width: 73.2%;
+    }
+  }
   .nav__items{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 73.2%;
-    background: white;
+    width: 55%;
+    background-color: white;
+    @include mediaquery_pad{
+      display: flex;
+      width: 73.2%;
+    }
     a{
       display: inline-block;
-      padding: 26px 30px;
+      padding: 10px 15px;
       box-sizing: border-box;
       border-right: 1px solid  #EDEDED;
       color: black;
       &:hover{
         background-color: $maincolor;
       }
+      @include mediaquery_pc{
+        padding: 26px 30px;
+      }
     }
   }
   .nav__input{
-    width: 26.3%;
+    width: 43%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mediaquery_pad{
+      width: 26.3%;
+    }
     input{
       width: 95%;
-      line-height: 45px;
-      font-size: 18px;
+      line-height: 28px;
+      font-size: 14px;
       color: #9F9F9F;
       background: #F3F3F3 url('../img/search.png') no-repeat 3px 3px;
       background-position-x:95%;
       background-position-y:50%;
       border: solid 1px #EDEDED;
+      @include mediaquery_pc{
+        line-height: 45px;
+        font-size: 18px;
+      }
     }
   }
+}
+#header__nav__toggle:checked + .nav__items{
+    display: flex;
+    flex-direction: column;
 }

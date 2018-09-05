@@ -21,10 +21,12 @@
       height: 100%;
     }
     .pre{
+      background-image: url("../img/slider_prev.gif");
       @extend%carousel--label;
       left:0;
     }
     .next{
+      background-image: url("../img/slider_next.gif");
       @extend%carousel--label;
       right:0;
     }

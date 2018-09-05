@@ -5,11 +5,13 @@
 @import "./modules/_extendclass.scss";
 .content{
   background-image: url("../img/bg.jpg");
-  padding-top:130px;
-  padding: 130px 0 300px;
+  padding: 190px 0 300px;
+  @include mediaquery_minipad{
+    padding-top: 130px;
+  }
   &__container{
     @extend%container--fixed;
     background-image: url("../img/subbg.gif");
-    height: 2000px;
+    padding-bottom: 90px;
   }
 }

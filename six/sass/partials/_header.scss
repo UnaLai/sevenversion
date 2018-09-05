@@ -17,10 +17,23 @@ header {
    left: 50%;
    transform: translateX(-50%);
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   @include mediaquery_minipad{
+     justify-content: space-between;
+     flex-direction:row;
+   }
 }
 .header__logo {
-   width: 28%;
+   width: 90%;
+   margin-bottom: 20px;
+   @include mediaquery_minipad{
+     width: 50%;
+     margin-bottom: 0px;
+   }
+   @include mediaquery_pc{
+     width: 28%;
+   }
    img {
       height: 100%;
       width: 100%;
@@ -52,8 +65,15 @@ header {
             background-position-x: -149px;
          }
          &:hover {
-            background-position-y: -27px;
+            background-position-y: -27.5px;
          }
       }
+   }
+   &__phone{
+     text-align: right;
+     font-size: 14px;
+     @include mediaquery_phone{
+       font-size: 18px;
+     }
    }
 }

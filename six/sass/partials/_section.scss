@@ -7,17 +7,22 @@ section {
    padding: 0 45px;
    .section__container{
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
      border-bottom: 2px solid #DADADA;
    }
    .choose,
    .news,
    .welcome {
-      width: 32%;
+      width: 100%;
+      @include mediaquery_pc{
+          width: 32%;
+      }
    }
    h3 {
       font-size: 31px;
       font-weight: 500;
+      margin-top: 0;
    }
 }
 .welcome {
@@ -51,7 +56,12 @@ section {
          background-color: #D9D9D9;
          border-radius: 50%;
          text-align: center;
+         &:hover{
+           background-color: $maincolor;
+         }
          a {
+            display:inline-block;
+            width: 100%;
             line-height: 55px;
             color: white;
             font-size: 20px;
@@ -75,28 +85,43 @@ section {
   &__media{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: 42px;
+    flex-direction: column;
+    @include mediaquery_minipad{
+      flex-direction: row;
+    }
     &__img{
-      width: 40%;
+      width: 100%;
+      @include mediaquery_minipad{
+        width: 40%;
+      }
       img{
         width: 100%;
         height: 100%;
       }
     }
     &__intro{
-      width: 55%;
+      width: 100%;
+      @include mediaquery_minipad{
+        width: 55%;
+      }
       display:flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content:flex-start;
+      @include mediaquery_pc{
+          justify-content: space-between;
+      }
       &__title{
         background-color: #80B60A;
-        width: 50%;
+        width: 100%;
         line-height: 40px;
         padding: 0 10px;
         box-sizing: border-box;
         color: white;
         font-weight: bold;
+        @include mediaquery_minipad{
+          width: 50%;
+        }
       }
       &__text{
         color: #8A8A8A;
