@@ -22,6 +22,7 @@ header {
    @include mediaquery_minipad{
      justify-content: space-between;
      flex-direction:row;
+     align-items: stretch;
    }
 }
 .header__logo {
@@ -45,7 +46,6 @@ header {
    justify-content: space-between;
    &__icons {
       text-align: right;
-      margin-bottom: 10px;
       a {
          display: inline-block;
          width: 28px;
