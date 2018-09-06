@@ -768,22 +768,24 @@ footer .footer__content__testimonials__media__intro__url {
   font-weight: bold;
 }
 /* line 86, ../sass/partials/_footer.scss */
-footer .footer__content__touch input {
+footer .footer__content__touch textarea {
   width: 100%;
   color: #8A8A8A;
   border-radius: 3%;
   box-sizing: border-box;
   border: 2px solid #D9D9D9;
   background-color: #E6E6E6;
-  line-height: 35px;
+  line-height: 27px;
   margin-bottom: 5px;
   font-weight: bold;
+  resize: none;
+  height: 35px;
 }
-/* line 96, ../sass/partials/_footer.scss */
-footer .footer__content__touch input:nth-child(3) {
-  padding-bottom: 130px;
+/* line 98, ../sass/partials/_footer.scss */
+footer .footer__content__touch textarea:nth-child(3) {
+  height: 130px;
 }
-/* line 100, ../sass/partials/_footer.scss */
+/* line 102, ../sass/partials/_footer.scss */
 footer .footer__content__touch button {
   line-height: 37px;
   font-weight: bold;
@@ -792,34 +794,35 @@ footer .footer__content__touch button {
   color: white;
   background-color: black;
 }
-/* line 107, ../sass/partials/_footer.scss */
+/* line 109, ../sass/partials/_footer.scss */
 footer .footer__content__touch button:hover {
   background-color: #80B60A;
 }
-/* line 113, ../sass/partials/_footer.scss */
+/* line 115, ../sass/partials/_footer.scss */
 footer .footer__content__flickr__imgcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 117, ../sass/partials/_footer.scss */
+/* line 119, ../sass/partials/_footer.scss */
 footer .footer__content__flickr__imgcontainer__img {
   width: 23%;
   margin-bottom: 5px;
 }
-/* line 120, ../sass/partials/_footer.scss */
+/* line 122, ../sass/partials/_footer.scss */
 footer .footer__content__flickr__imgcontainer__img a {
   display: inline-block;
+  width: 100%;
 }
-/* line 123, ../sass/partials/_footer.scss */
+/* line 126, ../sass/partials/_footer.scss */
 footer .footer__content__flickr__imgcontainer__img img {
   width: 100%;
 }
-/* line 125, ../sass/partials/_footer.scss */
+/* line 128, ../sass/partials/_footer.scss */
 footer .footer__content__flickr__imgcontainer__img img:hover {
   filter: brightness(0.5);
 }
-/* line 133, ../sass/partials/_footer.scss */
+/* line 136, ../sass/partials/_footer.scss */
 footer .footer__bottom {
   display: flex;
   flex-direction: column;
@@ -828,22 +831,22 @@ footer .footer__bottom {
   font-size: 14px;
 }
 @media all and (min-width: 1400px) {
-  /* line 133, ../sass/partials/_footer.scss */
+  /* line 136, ../sass/partials/_footer.scss */
   footer .footer__bottom {
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
   }
 }
-/* line 144, ../sass/partials/_footer.scss */
+/* line 147, ../sass/partials/_footer.scss */
 footer .footer__bottom__copyright {
   color: #5A5A5A;
 }
-/* line 146, ../sass/partials/_footer.scss */
+/* line 149, ../sass/partials/_footer.scss */
 footer .footer__bottom__copyright span {
   color: #80B60A;
 }
-/* line 151, ../sass/partials/_footer.scss */
+/* line 154, ../sass/partials/_footer.scss */
 footer .footer__bottom__nav a {
   display: block;
   color: #5A5A5A;
@@ -852,7 +855,7 @@ footer .footer__bottom__nav a {
   margin-top: 3px;
 }
 @media all and (min-width: 576px) {
-  /* line 151, ../sass/partials/_footer.scss */
+  /* line 154, ../sass/partials/_footer.scss */
   footer .footer__bottom__nav a {
     display: inline-block;
     border-right: 2px solid #8B8A8A;
@@ -860,17 +863,17 @@ footer .footer__bottom__nav a {
   }
 }
 @media all and (min-width: 1400px) {
-  /* line 151, ../sass/partials/_footer.scss */
+  /* line 154, ../sass/partials/_footer.scss */
   footer .footer__bottom__nav a {
     padding: 0 10px;
     font-size: 16px;
   }
 }
-/* line 166, ../sass/partials/_footer.scss */
+/* line 169, ../sass/partials/_footer.scss */
 footer .footer__bottom__nav a:last-child {
   border-right: none;
 }
-/* line 169, ../sass/partials/_footer.scss */
+/* line 172, ../sass/partials/_footer.scss */
 footer .footer__bottom__nav a:hover {
   color: #80B60A;
 }
