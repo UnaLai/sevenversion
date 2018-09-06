@@ -46,6 +46,7 @@ nav{
       }
       @include mediaquery_pad{
         padding: 18px 15px;
+        font-size: 17px;
       }
       @include mediaquery_pc{
         padding: 26px 30px;
