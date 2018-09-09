@@ -1,0 +1,593 @@
+/* line 1, ../sass/modules/_normalize.scss */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* line 5, ../sass/modules/_normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, ../sass/modules/_extendclass.scss */
+.maincontent__container, footer .footer__container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media all and (min-width: 576px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .maincontent__container, footer .footer__container {
+    max-width: 547.2px;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .maincontent__container, footer .footer__container {
+    max-width: 729.6px;
+  }
+}
+@media all and (min-width: 1000px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .maincontent__container, footer .footer__container {
+    max-width: 950px;
+  }
+}
+@media all and (min-width: 1100px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .maincontent__container, footer .footer__container {
+    max-width: 1045px;
+  }
+}
+
+/* line 21, ../sass/modules/_extendclass.scss */
+.filter__content__brands__firstitems, .filter__content__brands__seconditems {
+  box-sizing: border-box;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+/* line 26, ../sass/modules/_extendclass.scss */
+.filter__content__brands__firstitems a, .filter__content__brands__seconditems a {
+  font-size: 13px;
+  line-height: 17px;
+  color: #5c5255;
+  font-weight: bold;
+}
+
+/* line 34, ../sass/modules/_extendclass.scss */
+.filter__content__choose__color__title, .filter__content__choose__price__title {
+  font-size: 20px;
+  margin: 35px 0 20px;
+}
+
+/* line 6, ../sass/partials/_maincontent.scss */
+.maincontent {
+  background-color: #F2F2F2;
+}
+
+/* line 6, ../sass/partials/_header.scss */
+header {
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 11, ../sass/partials/_header.scss */
+header .header__logo {
+  width: 50%;
+}
+/* line 13, ../sass/partials/_header.scss */
+header .header__logo img {
+  width: 78%;
+}
+/* line 17, ../sass/partials/_header.scss */
+header .header__information {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 22, ../sass/partials/_header.scss */
+header .header__information__contact {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+/* line 26, ../sass/partials/_header.scss */
+header .header__information__contact i {
+  margin-left: 40px;
+}
+/* line 30, ../sass/partials/_header.scss */
+header .header__information__member {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid white;
+}
+/* line 35, ../sass/partials/_header.scss */
+header .header__information__member__car {
+  text-align: center;
+  padding: 0 25px;
+}
+/* line 38, ../sass/partials/_header.scss */
+header .header__information__member__car i {
+  width: 30px;
+  display: inline-block;
+  line-height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+/* line 46, ../sass/partials/_header.scss */
+header .header__information__member__login {
+  border-left: 1px solid black;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+/* line 50, ../sass/partials/_header.scss */
+header .header__information__member__login a {
+  color: black;
+  text-decoration: underline;
+  font-size: 16px;
+}
+/* line 56, ../sass/partials/_header.scss */
+header .header__information__member__register {
+  width: 175px;
+  padding: 0;
+  background-color: #F23A27;
+  line-height: 45px;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+/* line 6, ../sass/partials/_nav.scss */
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+/* line 14, ../sass/partials/_nav.scss */
+nav .nav__items a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 33px;
+  color: black;
+  border-right: 2px solid #E5E5E3;
+}
+/* line 20, ../sass/partials/_nav.scss */
+nav .nav__items a:last-child {
+  border-right: 0;
+}
+/* line 25, ../sass/partials/_nav.scss */
+nav input {
+  width: 225px;
+  height: 25px;
+  border-radius: 15px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 0 0 25px;
+  box-sizing: border-box;
+  border: 2px solid #DEDEDC;
+  margin-right: 20px;
+  background-image: url("../images/magnifying-glass.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+
+/* line 6, ../sass/partials/_filter.scss */
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+/* line 9, ../sass/partials/_filter.scss */
+.filter__title {
+  width: 100%;
+  margin: 30px auto 0 20px;
+  text-align: center;
+}
+/* line 13, ../sass/partials/_filter.scss */
+.filter__title__text {
+  width: 105px;
+  padding: 7px 5px;
+  box-sizing: border-box;
+  background-color: #2F2D2E;
+  color: white;
+  font-size: 16px;
+}
+/* line 22, ../sass/partials/_filter.scss */
+.filter__content {
+  width: 100%;
+  padding: 40px 25px 20px;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+}
+/* line 28, ../sass/partials/_filter.scss */
+.filter__content__brands {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 32, ../sass/partials/_filter.scss */
+.filter__content__brands__title {
+  width: 100%;
+  padding-left: 40px;
+  color: black;
+  margin-bottom: 10px;
+}
+/* line 38, ../sass/partials/_filter.scss */
+.filter__content__brands__firstitems {
+  width: 60%;
+  padding-right: 25px;
+  border-right: 1px solid #E5E5E3;
+}
+/* line 44, ../sass/partials/_filter.scss */
+.filter__content__brands__seconditems {
+  width: 40%;
+  padding: 0 8px 0 18px;
+}
+/* line 51, ../sass/partials/_filter.scss */
+.filter__content__type {
+  width: 57%;
+  display: flex;
+  text-align: center;
+  padding: 0 35px;
+  box-sizing: border-box;
+}
+/* line 57, ../sass/partials/_filter.scss */
+.filter__content__type__card {
+  width: 33.3%;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
+/* line 61, ../sass/partials/_filter.scss */
+.filter__content__type__card__title {
+  font-size: 27px;
+  color: #625e5e;
+}
+/* line 65, ../sass/partials/_filter.scss */
+.filter__content__type__card__img {
+  width: 100%;
+}
+/* line 67, ../sass/partials/_filter.scss */
+.filter__content__type__card__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+/* line 72, ../sass/partials/_filter.scss */
+.filter__content__type__card__subtitle {
+  color: red;
+  font-size: 15px;
+}
+/* line 76, ../sass/partials/_filter.scss */
+.filter__content__type__card__description {
+  font-size: 10px;
+}
+/* line 79, ../sass/partials/_filter.scss */
+.filter__content__type__card__burger {
+  font-size: 10px;
+}
+/* line 84, ../sass/partials/_filter.scss */
+.filter__content__choose {
+  width: 23%;
+}
+/* line 90, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 93, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+/* line 98, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(1) {
+  background-color: red;
+}
+/* line 101, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(2) {
+  background-color: #F59F59;
+}
+/* line 104, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(3) {
+  background-color: #51A7FC;
+}
+/* line 107, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(4) {
+  background-color: #DAE279;
+}
+/* line 110, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(5) {
+  background-color: #641315;
+}
+/* line 113, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(6) {
+  background-color: #782270;
+}
+/* line 116, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(7) {
+  background-color: #1F3653;
+}
+/* line 119, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(8) {
+  background-color: #55733D;
+}
+/* line 122, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(9) {
+  background-color: #7326E9;
+}
+/* line 125, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(10) {
+  background-color: #4C4031;
+}
+/* line 128, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(11) {
+  background-color: #101010;
+}
+/* line 131, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(12) {
+  background-color: #1C6914;
+}
+/* line 134, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(13) {
+  background-color: #9A62A0;
+}
+/* line 137, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(14) {
+  background-color: #094A71;
+}
+/* line 140, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(15) {
+  background-color: #BEACAC;
+}
+/* line 143, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(16) {
+  background-color: #F85815;
+}
+/* line 146, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(17) {
+  background-color: #C5D815;
+}
+/* line 149, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(18) {
+  background-color: #417074;
+}
+/* line 152, ../sass/partials/_filter.scss */
+.filter__content__choose__color__colors__items:nth-child(19) {
+  background-color: #BC8879;
+}
+
+/* line 6, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 11, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear h2 {
+  width: 100%;
+  font-size: 38px;
+  margin: 0;
+}
+/* line 16, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__subtitle {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 0 18px;
+}
+/* line 21, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__pic {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 25, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__pic__choose {
+  width: 100%;
+  margin-bottom: 3px;
+}
+/* line 28, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__pic__choose img {
+  width: 100%;
+}
+/* line 32, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__pic__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 36, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__pic__items__item {
+  width: 32%;
+}
+/* line 38, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__pic__items__item img {
+  width: 100%;
+  height: 100%;
+}
+/* line 45, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro {
+  width: 45%;
+}
+/* line 47, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #cfcaca;
+}
+/* line 54, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark {
+  width: 80%;
+}
+/* line 57, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark__evaluation__stars {
+  display: flex;
+}
+/* line 59, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark__evaluation__stars .star {
+  width: 21px;
+  height: 21px;
+  background-image: url("../images/star.png");
+  background-position-x: -67px;
+}
+/* line 64, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark__evaluation__stars .star:hover {
+  background-position-x: -45px;
+}
+/* line 69, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark__evaluation__subtitle {
+  font-size: 12px;
+  font-style: italic;
+}
+/* line 74, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark__special {
+  font-size: 70px;
+  background-color: white;
+  text-align: center;
+  border-top: 2px solid #E3E3E1;
+  border-bottom: 2px solid #E3E3E1;
+  position: relative;
+}
+/* line 82, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__mark__original {
+  background-color: #E6252B;
+  color: white;
+  line-height: 40px;
+  font-size: 25px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  text-decoration: line-through;
+  font-style: italic;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+/* line 96, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__pig {
+  width: 15%;
+}
+/* line 98, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__pig__img {
+  width: 100%;
+}
+/* line 100, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__pig__img img {
+  width: 100%;
+  height: 100%;
+}
+/* line 105, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__pig__description {
+  font-size: 15px;
+}
+/* line 107, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__price__pig__description span {
+  font-size: 17px;
+  font-weight: bold;
+}
+/* line 114, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__description {
+  font-size: 13px;
+  color: #a8a5a5;
+  text-align: justify;
+}
+/* line 119, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__description--sub {
+  text-align: right;
+  font-size: 13px;
+  color: #a8a5a5;
+}
+/* line 124, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shipping {
+  width: 135px;
+  background-image: url("../images/shipping-icon.png");
+  background-repeat: no-repeat;
+  text-align: right;
+  line-height: 32px;
+  margin: 15px 0 15px auto;
+}
+/* line 132, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shopping {
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 135, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shopping__size {
+  margin-right: 15px;
+}
+/* line 137, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shopping__size__title {
+  font-size: 12px;
+}
+/* line 140, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shopping__size__select {
+  width: 170px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #d4cfcf;
+}
+/* line 149, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shopping__qty__title {
+  font-size: 12px;
+}
+/* line 152, ../sass/partials/_mensfooterwear.scss */
+.mensfooterwear__intro__shopping__qty__select {
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #d4cfcf;
+}
+
+/* line 6, ../sass/partials/_footer.scss */
+footer {
+  background: #F42C30;
+}
+/* line 8, ../sass/partials/_footer.scss */
+footer .footer__container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 14, ../sass/partials/_footer.scss */
+footer .footer__container__logo {
+  width: 20%;
+}
+/* line 16, ../sass/partials/_footer.scss */
+footer .footer__container__logo img {
+  width: 100%;
+}
+/* line 20, ../sass/partials/_footer.scss */
+footer .footer__container__nav {
+  width: 60%;
+  display: flex;
+}
+/* line 23, ../sass/partials/_footer.scss */
+footer .footer__container__nav a {
+  display: block;
+  color: white;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-right: 1px solid white;
+}
+/* line 31, ../sass/partials/_footer.scss */
+footer .footer__container__icon {
+  width: 11%;
+}
+/* line 33, ../sass/partials/_footer.scss */
+footer .footer__container__icon i {
+  color: white;
+  font-size: 30px;
+  margin-left: 5px;
+}

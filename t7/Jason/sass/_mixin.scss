@@ -1,0 +1,6 @@
+@mixin btn ($bg-color: $main-color, $color: $bg-font-color) {
+    background: linear-gradient(30deg, rgb(216, 69 ,52) 50%, rgb(222, 69, 52) 50%);
+    color: $color;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #D84506;
+}

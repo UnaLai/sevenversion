@@ -1,0 +1,164 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+.filter {
+   display: flex;
+   flex-direction: column;
+   &__title {
+      width: 100%;
+      margin: 30px auto 0 20px;
+      text-align: center;
+      &__text {
+         width: 105px;
+         padding: 7px 5px;
+         box-sizing: border-box;
+         background-color: #2F2D2E;
+         color: white;
+         font-size: 16px;
+      }
+   }
+   &__content {
+      width: 100%;
+      padding: 40px 25px 20px;
+      box-sizing: border-box;
+      background-color: white;
+      display: flex;
+      &__brands {
+         width: 20%;
+         display: flex;
+         flex-wrap: wrap;
+         &__title {
+            width: 100%;
+            padding-left: 40px;
+            color: black;
+            margin-bottom: 10px;
+         }
+         &__firstitems {
+           @extend%filter__brand__itemsection;
+           width: 60%;
+            padding-right: 25px;
+            border-right: 1px solid #E5E5E3;
+         }
+         &__seconditems {
+           @extend%filter__brand__itemsection;
+           width: 40%;
+           padding: 0 8px 0 18px;
+          // padding-left: 20px;
+         }
+      }
+      &__type {
+         width: 57%;
+         display: flex;
+         text-align: center;
+         padding: 0 35px;
+         box-sizing: border-box;
+         &__card{
+           width: 33.3%;
+           padding: 0 22px;
+           box-sizing: border-box;
+           &__title{
+             font-size: 27px;
+             color: #625e5e;
+           }
+           &__img{
+             width: 100%;
+             img{
+               width: 100%;;
+               border-radius: 50%;
+             }
+           }
+           &__subtitle{
+             color: red;
+             font-size: 15px;
+           }
+           &__description{
+             font-size: 10px;
+           }
+           &__burger{
+             font-size: 10px;
+           }
+         }
+      }
+      &__choose {
+         width: 23%;
+         &__color{
+           &__title{
+             @extend%filter__content__choose__title;
+           }
+           &__colors{
+             display: flex;
+             flex-wrap: wrap;
+             &__items{
+               display: block;
+               width: 22px;
+               height: 22px;
+             }
+             &__items:nth-child(1){
+               background-color: red;
+             }
+             &__items:nth-child(2){
+               background-color: #F59F59;
+             }
+             &__items:nth-child(3){
+               background-color: #51A7FC;
+             }
+             &__items:nth-child(4){
+               background-color: #DAE279;
+             }
+             &__items:nth-child(5){
+               background-color: #641315;
+             }
+             &__items:nth-child(6){
+               background-color: #782270;
+             }
+             &__items:nth-child(7){
+               background-color: #1F3653;
+             }
+             &__items:nth-child(8){
+               background-color: #55733D;
+             }
+             &__items:nth-child(9){
+               background-color: #7326E9;
+             }
+             &__items:nth-child(10){
+               background-color: #4C4031;
+             }
+             &__items:nth-child(11){
+               background-color: #101010;
+             }
+             &__items:nth-child(12){
+               background-color: #1C6914;
+             }
+             &__items:nth-child(13){
+               background-color: #9A62A0;
+             }
+             &__items:nth-child(14){
+               background-color: #094A71;
+             }
+             &__items:nth-child(15){
+               background-color: #BEACAC;
+             }
+             &__items:nth-child(16){
+               background-color: #F85815;
+             }
+             &__items:nth-child(17){
+               background-color: #C5D815;
+             }
+             &__items:nth-child(18){
+               background-color: #417074;
+             }
+             &__items:nth-child(19){
+               background-color: #BC8879;
+             }
+           }
+         }
+         &__price{
+           &__title{
+             @extend%filter__content__choose__title;
+           }
+         }
+      }
+   }
+}

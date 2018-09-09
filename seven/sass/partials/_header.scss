@@ -1,0 +1,67 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+header{
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .header__logo{
+    width: 50%;
+    img{
+      width: 78%;
+    }
+  }
+  .header__information{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__contact{
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 20px;
+      i{
+        margin-left: 40px;
+      }
+    }
+    &__member{
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border: 1px solid white;
+      &__car{
+        text-align: center;
+        padding: 0 25px;
+        i{
+          width: 30px;
+          display: inline-block;
+          line-height: 30px;
+          background-color: white;
+          border-radius: 50%;
+        }
+      }
+      &__login{
+        border-left: 1px solid black;
+        padding: 0 25px;
+        box-sizing: border-box;
+        a{
+          color: black;
+          text-decoration: underline;
+          font-size: 16px;
+        }
+      }
+      &__register{
+        width: 175px;
+        padding: 0;
+        background-color: #F23A27;
+        line-height: 45px;
+        color: white;
+        border: none;
+        font-size: 20px;
+      }
+    }
+  }
+}

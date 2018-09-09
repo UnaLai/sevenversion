@@ -1,0 +1,39 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+nav {
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 10px;
+   box-sizing: border-box;
+   .nav__items {
+      a {
+         display: inline-block;
+         box-sizing: border-box;
+         padding: 10px 33px;
+         color: black;
+         border-right: 2px solid #E5E5E3;
+         &:last-child {
+            border-right: 0;
+         }
+      }
+   }
+   input{
+     width: 225px;
+     height: 25px;
+     border-radius: 15px;
+     font-size: 12px;
+     line-height: 20px;
+     padding: 0 0 0 25px;
+     box-sizing: border-box;
+     border: 2px solid #DEDEDC;
+     margin-right: 20px;
+     background-image:url("../images/magnifying-glass.png");
+     background-repeat: no-repeat;
+     background-position: 5px;
+   }
+}

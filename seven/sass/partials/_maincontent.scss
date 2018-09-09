@@ -1,0 +1,11 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/_extendclass.scss";
+.maincontent{
+  background-color: $bodybackgroundcolor;
+  &__container{
+    @extend %container--fixed;
+  }
+}
