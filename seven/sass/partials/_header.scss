@@ -8,23 +8,39 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
   .header__logo{
-    width: 50%;
+    width: 100%;
+    @include mediaquery_minipad{
+      width: 50%;
+    }
     img{
-      width: 78%;
+      width: 100%;
+      @include mediaquery_minipad{
+        width: 78%;
+      }
     }
   }
   .header__information{
-    width: 50%;
+    width: 100%;
     display:flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    @include mediaquery_minipad{
+      width: 50%;
+      align-items: flex-end;
+      margin-top: 0;
+    }
     &__contact{
       font-size: 14px;
       color: #555555;
       margin-bottom: 20px;
       i{
-        margin-left: 40px;
+        margin-left: 10px;
+        @include mediaquery_minipad{
+          margin-left: 40px;
+        }
       }
     }
     &__member{
@@ -34,7 +50,7 @@ header{
       border: 1px solid white;
       &__car{
         text-align: center;
-        padding: 0 25px;
+        padding: 0 16px;
         i{
           width: 30px;
           display: inline-block;
@@ -54,13 +70,19 @@ header{
         }
       }
       &__register{
-        width: 175px;
+        width: 130px;
         padding: 0;
         background-color: #F23A27;
-        line-height: 45px;
+        line-height: 40px;
         color: white;
         border: none;
-        font-size: 20px;
+        font-size: 17px;
+        border-radius: 5px;
+        cursor:pointer;
+        @include mediaquery_minipad{
+          width: 175px;
+          font-size: 20px;
+        }
       }
     }
   }

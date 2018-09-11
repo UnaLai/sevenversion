@@ -33,5 +33,9 @@
 
 %filter__content__choose__title{
   font-size: 20px;
-  margin: 35px 0 20px;
+  margin: 20px 0 15px;
+  text-align: center;
+  @include mediaquery_minipad {
+    text-align: left;
+  }
 }

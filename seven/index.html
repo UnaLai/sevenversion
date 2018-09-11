@@ -32,6 +32,8 @@
                 </div>
             </header>
             <nav>
+                <input type="checkbox" id="burger">
+                <label for="burger">&#9776;</label>
                 <div class="nav__items">
                     <a href="##">PRODUCTS</a>
                     <a href="##">CAMPAINGS</a>
@@ -71,7 +73,8 @@
                         <div class="filter__content__type__card">
                             <div class="filter__content__type__card__title">WOMEN</div>
                             <div class="filter__content__type__card__img">
-                                <img src="images/p1.jpg" />
+                                <img class="pic" src="images/p1.jpg" />
+                                <img class="pic-cover" src="images/trans1.png">
                             </div>
                             <div class="filter__content__type__card__subtitle">TOTAL</div>
                             <div class="filter__content__type__card__description">357 PROSUCTS</div>
@@ -80,7 +83,8 @@
                         <div class="filter__content__type__card">
                             <div class="filter__content__type__card__title">MEN</div>
                             <div class="filter__content__type__card__img">
-                                <img src="images/p2.jpg" />
+                                <img class="pic" src="images/p2.jpg" />
+                                <img class="pic-cover" src="images/trans2.png">
                             </div>
                             <div class="filter__content__type__card__subtitle">TOTAL</div>
                             <div class="filter__content__type__card__description">357 PROSUCTS</div>
@@ -89,7 +93,8 @@
                         <div class="filter__content__type__card">
                             <div class="filter__content__type__card__title">KIDS</div>
                             <div class="filter__content__type__card__img">
-                                <img src="images/p3.jpg" />
+                                <img class="pic" src="images/p3.jpg" />
+                                <img class="pic-cover" src="images/trans3.png">
                             </div>
                             <div class="filter__content__type__card__subtitle">TOTAL</div>
                             <div class="filter__content__type__card__description">357 PROSUCTS</div>
@@ -123,6 +128,7 @@
                         </div>
                         <div class="filter__content__choose__price">
                             <div class="filter__content__choose__price__title">PRICE RANGE</div>
+                            <input type="range" min="0" max="100" step="1" value="50">
                         </div>
                     </div>
                 </div>
@@ -132,17 +138,17 @@
                 <div class="mensfooterwear__subtitle">Hookset Handcrafted Fabric Chukka</div>
                 <div class="mensfooterwear__pic">
                     <div class="mensfooterwear__pic__choose">
-                        <img src="images/product.png">
+                        <img src="images/Timberland-side.png">
                     </div>
                     <div class="mensfooterwear__pic__items">
                         <div class="mensfooterwear__pic__items__item">
-                            <img src="images/product_s1.png">
+                            <img src="images/Timberland-back.png">
                         </div>
                         <div class="mensfooterwear__pic__items__item">
-                            <img src="images/product_s2.png">
+                            <img src="images/Timberland-front.png">
                         </div>
                         <div class="mensfooterwear__pic__items__item">
-                            <img src="images/product_s3.png">
+                            <img src="images/Timberland-side.png">
                         </div>
                     </div>
                 </div>
@@ -151,11 +157,11 @@
                         <div class="mensfooterwear__intro__price__mark">
                             <div class="mensfooterwear__intro__price__mark__evaluation">
                                 <div class="mensfooterwear__intro__price__mark__evaluation__stars">
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
+                                    <div class="star star1"></div>
+                                    <div class="star star2"></div>
+                                    <div class="star star3"></div>
+                                    <div class="star star4"></div>
+                                    <div class="star star5"></div>
                                 </div>
                                 <div class="mensfooterwear__intro__price__mark__evaluation__subtitle">Read&Reviews</div>
                             </div>
@@ -170,7 +176,7 @@
                             <div class="mensfooterwear__intro__price__pig__description">save <span>40%</span></div>
                         </div>
                     </div>
-                    <div class="mensfooterwear__intro__description">This is a long establshed fact that a reader eill ve distracted by the readatoin content of a page when looking at its layout. The point of using Lorem lpsum is that it has a more-or-less nomal destcution od letters,as opposed to using</div>
+                    <div class="mensfooterwear__intro__description">This is a long establshed this afact that a reader eill ve distracted by the readatoin content of a page when looking at its layout. The point of using Lorem lpsum is that it has a more-or-less nomal destcution od letters,as opposed to abfgffd using</div>
                     <div class="mensfooterwear__intro__description--sub">Content here,e</div>
                     <div class="mensfooterwear__intro__shipping">Free shipping</div>
                     <div class="mensfooterwear__intro__shopping">
@@ -196,31 +202,89 @@
                             </select>
                         </div>
                     </div>
-                    <div class="mensfooterwear__intro__add">Add to cart</div>
-                    <div class="mensfooterwear__intro__share"></div>
+                    <button class="mensfooterwear__intro__add">Add to cart<i class="fas fa-shopping-cart"></i></button>
+                    <div class="mensfooterwear__intro__share">
+                        <div class="mensfooterwear__intro__share__text">Share This:</div>
+                        <div class="mensfooterwear__intro__share__icons">
+                            <a href="##" class="fab fa-facebook"></a>
+                            <a class="fab fa-pinterest"></a>
+                            <a class="fab fa-twitter-square"></a>
+                            <a class="fas fa-envelope"></a>
+                            <a class="fas fa-print"></a>
+                            <a class="fab fa-google-plus-square"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="pagination"></div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer__container">
-            <div class="footer__container__logo"><img src="images/footerlogo.png"></div>
-            <div class="footer__container__nav">
-              <a href="##">About Us</a>
-              <a href="##">Faq</a>
-              <a href="##">Terms and Conditions</a>
-              <a href="##">Secure Payments</a>
-              <a href="##">Shipping</a>
-              <a href="##">Contact</a>
+            <div class="pagination">
+                <div class="pagination__title">
+                    <a href="#content1">PRODUCT OVERWIEV</a>
+                    <a href="#content2">FEATURES</a>
+                    <a href="#content3">CUSTOMER REVIEWS</a>
+                </div>
+                <div class="pagination__container">
+                    <div class="pagination__content" id="content1">
+                        <div class="pagination__content__title">DESCRIPTION</div>
+                        <p class="pagination__content__p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed neque tenetur tempore sit quia provident cupiditate ut iusto deleniti reiciendis, quibusdam voluptates dolore vel minus nulla eum? Voluptatibus, magnam. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Cumque sed neque tenetur tempore sit quia provident cupiditate ut iusto deleniti reiciendis, quibusdam voluptates dolore vel minus nulla eum? Voluptatibus, magnam.</p>
+                        <div class="pagination__content__subtitle">DETAILS</div>
+                        <ul class="pagination__content__p2">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur aelit.</li>
+                            <li>Lorem ipsum dolor sit, amet conspisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet consping elit.</li>
+                        </ul>
+                    </div>
+                    <div class="pagination__content" id="content2">
+                        <div class="pagination__content__title">DESCRIPTION</div>
+                        <p class="pagination__content__p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed neque tenetur tempore sit quia provident cupiditate ut iusto deleniti reiciendis, quibusdam voluptates dolore vel minus nulla eum? Voluptatibus, magnam. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Cumque sed neque tenetur tempore sit quia provident cupiditate ut iusto deleniti reiciendis, quibusdam voluptates dolore vel minus nulla eum? Voluptatibus, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="pagination__content__subtitle">DETAILS</div>
+                        <ul class="pagination__content__p2">
+                            <li>Lorem ipsum dolor sit, amet consecteticing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur.</li>
+                        </ul>
+                    </div>
+                    <div class="pagination__content" id="content3">
+                        <div class="pagination__content__title">DESCRIPTION</div>
+                        <p class="pagination__content__p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed neque tenetur tempore sit quia provident cupiditate ut iusto deleniti reiciendis, quibusdam voluptates dolore vel minus nulla eum? Voluptatibus, magnam. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Cumque sed neque tenetur temp</p>
+                        <div class="pagination__content__subtitle">DETAILS</div>
+                        <ul class="pagination__content__p2">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur aelit.</li>
+                            <li>Lorem ipsum dolor sit, amet conspisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet consping elit.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur aelit.</li>
+                            <li>Lorem ipsum dolor sit, amet conspisicing elit.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="footer__container__icon">
-              <i class="fab fa-pinterest"></i>
-              <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-facebook-square"></i>
-            </div>
         </div>
-    </footer>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__container__logo"><img src="images/footerlogo.png"></div>
+                <div class="footer__container__nav">
+                    <a href="##">About Us</a>
+                    <a href="##">Faq</a>
+                    <a href="##">Terms and Conditions</a>
+                    <a href="##">Secure Payments</a>
+                    <a href="##">Shipping</a>
+                    <a href="##">Contact</a>
+                </div>
+                <div class="footer__container__icon">
+                    <a href="##" class="fab fa-pinterest"></a>
+                    <a href="##" class="fab fa-twitter-square"></a>
+                    <a href="##" class="fab fa-facebook-square"></a>
+                </div>
+            </div>
+        </footer>
 
 </body>
 
